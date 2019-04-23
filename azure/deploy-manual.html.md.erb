@@ -93,7 +93,7 @@ procedures in this topic.</p>
     $ az network nsg rule create --name https \
     --nsg-name opsmgr-nsg --resource-group $RESOURCE_GROUP \
     --protocol Tcp --priority 200 \
-    --destination-port-range 443
+    --destination-port-range '443'
     </pre>
 
 1. Add a network security group rule to the `opsmgr-nsg` group to allow SSH traffic to the Ops Manager VM.
